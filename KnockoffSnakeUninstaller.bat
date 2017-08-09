@@ -45,6 +45,7 @@ move KnockoffSnakeUninstaller.bat %USERPROFILE%
 cd ..
 echo Deleting file folder...
 rmdir KnockoffSnake
+pause
 echo Deleting uninstaller...
 del KnockoffSnakeUninstaller.bat
 )
