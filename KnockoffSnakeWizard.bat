@@ -23,7 +23,7 @@ echo Installing uninstaller...
 move KnockoffSnakeUninstaller.bat %USERPROFILE%/KnockoffSnake
 echo Installing launcher...
 move KnockoffSnakeLauncher.bat %USERPROFILE%/KnockoffSnake
-echo
+echo 
 echo Would you like to add a desktop shortcut? [y][n]
 set /p shortcut=
 if "%shortcut%" == "y" (
@@ -32,7 +32,7 @@ if "%shortcut%" == "y" (
 	move KnockoffSnakeDesktop.bat %USERPROFILE%/Desktop
 )
 pause
-echo
+echo 
 echo Installation complete. Do you have a copy of Prosessing installed? [y][n]
 set /p haveprocessing=
 if not "%haveprocessing%" == "y" (
