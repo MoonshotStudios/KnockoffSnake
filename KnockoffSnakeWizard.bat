@@ -30,8 +30,8 @@ echo Would you like to add a desktop shortcut? [y][n]
 set /p shortcut=
 if "%shortcut%" == "y" (
 	echo Installing desktop icon...
-	move %USERPROFILE%/Downloads/KnockoffSnake-master/KnockoffSnake-master/KnockoffSnakeDesktop.bat %USERPROFILE%/Desktop
-	echo Desktop icon installed
+	cd %USERPROFILE%/Downloads/KnockoffSnake-master/KnockoffSnake-master
+	move KnockoffSnakeDesktop.bat %USERPROFILE%/Desktop
 )
 pause
 echo Installation complete. Do you have a copy of Prosessing installed? [y][n]
@@ -42,5 +42,6 @@ if not "%haveprocessing%" == "y" (
 if "%haveprocessing%" == "y" (
 	echo You may now run the program.
 )
+pause
 end:
 exit
