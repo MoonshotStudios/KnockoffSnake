@@ -30,14 +30,16 @@ echo Deleting program folder...
 rmdir SnakeRemastered
 echo Deleting launcher...
 del KnockoffSnakeLauncher.bat
-cd %USERPROFILE%/Downloads/SnakeRemastered-master
+cd %USERPROFILE%/Downloads/SnakeRemastered-master/KnockoffSnake-master
 echo Deleting wizard...
 del SnakeRemasteredWizard.bat
 echo Deleting readme...
 del README.md
 cd ..
 echo Deleting download folder...
-rmdir SnakeRemastered
+rmdir SnakeRemastered-master
+cd ..
+rmdir SnakeRemastered-master
 cd %USERPROFILE%/KnockoffSnake
 move KnockoffSnakeUninstaller.bat %USERPROFILE%
 cd ..
