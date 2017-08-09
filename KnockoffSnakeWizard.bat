@@ -5,7 +5,7 @@ echo Creating file folder...
 mkdir KnockoffSnake
 cd KnockoffSnake
 mkdir SnakeRemastered
-cd %USERPROFILE%/Downloads/KnockoffSnake-master/KnockoffSnake-master
+cd %USERPROFILE%/Downloads/KnockoffSnake
 echo Installing images...
 move Data %USERPROFILE%/KnockoffSnake/SnakeRemastered
 echo Installing coin file...
@@ -24,7 +24,7 @@ echo
 echo Would you like to add a desktop shortcut? [y][n]
 set /p shortcut=
 echo %shortcut%=="y" (
-	cd %USERPROFILE%/Downloads/KnockoffSnake-master/KnockoffSnake-master
+	cd %USERPROFILE%/Downloads/KnockoffSnake
 	echo Installing desktop icon...
 	move KnockoffSnakeDesktop.bat %USERPROFILE%/Desktop
 )
