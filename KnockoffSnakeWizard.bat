@@ -2,7 +2,9 @@
 cls
 echo Would you like to install KnockoffSnake? [y][n]
 set /p confirm=
-if "%confirm%" == "y" (
+if not "%confirm%" == "y" (
+	goto end
+)
 cd %USERPROFILE%
 echo Creating file folder...
 mkdir KnockoffSnake
@@ -40,5 +42,5 @@ if not "%haveprocessing%" == "y" (
 if "%haveprocessing%" == "y" (
 	echo You may now run the program.
 )
-)
-pause
+end:
+exit
