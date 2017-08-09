@@ -2,7 +2,7 @@
 cls
 echo Are you sure you want to uninstall KnockoffSnake? [y][n]
 set /p confirm=
-if %confirm%=="y" (
+if "%confirm%" == "y" (
 cd %USERPROFILE%/Desktop
 echo Deleting desktop icon...
 del KnockoffSnakeDesktop.bat

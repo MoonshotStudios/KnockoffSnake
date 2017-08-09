@@ -1,5 +1,8 @@
 @echo off
 cls
+echo Would you like to install KnockoffSnake? [y][n]
+set /p confirm=
+if "%confirm%" == "y" (
 cd /d %USERPROFILE%
 echo Creating file folder...
 mkdir KnockoffSnake
@@ -23,7 +26,7 @@ move KnockoffSnakeLauncher.bat %USERPROFILE%/KnockoffSnake
 echo
 echo Would you like to add a desktop shortcut? [y][n]
 set /p shortcut=
-echo %shortcut%=="y" (
+if "%shortcut%" == "y" (
 	cd %USERPROFILE%/Downloads/KnockoffSnake-master
 	echo Installing desktop icon...
 	move KnockoffSnakeDesktop.bat %USERPROFILE%/Desktop
@@ -32,9 +35,10 @@ pause
 echo
 echo Installation complete. Do you have a copy of Prosessing installed? [y][n]
 set /p haveprocessing=
-if not haveprocessing=="y" (
+if not "%haveprocessing%" == "y" (
 	echo Please install Processing before running this program. Otherwise, it will not work.
 )
-if haveprocessing=="y" (
+if "%haveprocessing%" == "y" (
 	echo You may now run the program.
+)
 )
